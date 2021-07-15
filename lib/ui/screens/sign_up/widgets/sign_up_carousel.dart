@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:revvy/ui/constants/AppColors.dart';
+import 'package:revvy/ui/widgets/texts/body_text.dart';
 import 'package:revvy/ui/widgets/texts/headline_widget.dart';
 
 class CarouselWidget extends StatefulWidget {
@@ -119,6 +120,9 @@ class Welcome extends StatelessWidget {
         Column(
           children: [
             Headline(title: 'Redefine Your Career', signs: '.'),
+            BodyText1(
+              title: 'Welcome to Revvy.',
+            )
           ],
         )
       ],
@@ -140,11 +144,18 @@ class Welcome2 extends StatelessWidget {
             color: Colors.black12,
           ),
           child: Image.network(
-            'https://images.unsplash.com/photo-1502117859338-fd9daa518a9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+            'https://images.unsplash.com/photo-1554321586-92083ba0a115?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
             fit: BoxFit.fill,
           ),
         ),
-        Headline(title: 'Create Your Personal Brand', signs: '.'),
+        Column(
+          children: [
+            Headline(title: 'Create Your Personal Brand.', signs: '.'),
+            BodyText1(
+              title: 'Connect, define & share your personal brand.',
+            )
+          ],
+        )
       ],
     );
   }
